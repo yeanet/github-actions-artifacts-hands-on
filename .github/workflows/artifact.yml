@@ -25,9 +25,8 @@ download:
   steps:
     - name: download text file
       uses: actions/download-artifact@v4
-	    with:
-	      name: hello-artifact
-	      path: ./artifacts
-        
+      with:
+        name: hello-artifact
+	path: ./artifacts
     - name: display content text file
       run: cat ./artifacts/hello.txt
